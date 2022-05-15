@@ -6,9 +6,13 @@ const prev = document.querySelector(".prev");
 let direction = "";
 
 prev.addEventListener("click", function () {
-  slider.style.transform = "translateX(0%)";
-  slider.style.transition = "transform 0.5s ease";
+  slider.style.transform = "translateX(-20%)";
+  slider.style.transition = "";
   slider.prepend(slider.lastElementChild);
+  setTimeout(() => {
+    slider.style.transform = "translateX(0%)";
+    slider.style.transition = "transform 0.5s ease";
+  });
   direction = prev.className;
 });
 
