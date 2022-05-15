@@ -40,12 +40,10 @@ body {
   align-items: center;
   height: 100%;
   position: absolute;
-  width: 500%;
   background-color: bisque;
 }
 
 .slider section {
-  flex-basis: 100%;
   text-align: center;
 }
 
